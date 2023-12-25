@@ -8,5 +8,5 @@
 ## Installation
 
 ```
-Install-Package Soenneker.Enums.ServiceBusQueue
+dotnet add package Soenneker.Enums.ServiceBusQueue
 ```
