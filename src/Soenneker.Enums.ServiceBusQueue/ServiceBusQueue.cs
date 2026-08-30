@@ -3,10 +3,10 @@
 namespace Soenneker.Enums.ServiceBusQueue;
 
 /// <summary>
-/// An abstract enum type for using in Azure Service Bus messages <para/>
-/// Obviously this is meant to be derived. Values should be plural, and lowercase.
+/// Base class for application-defined Azure Service Bus queue names.
 /// </summary>
-public abstract class ServiceBusQueue : NamedSmartEnum<ServiceBusQueue>
+/// <typeparam name="TQueue">The concrete queue type.</typeparam>
+public abstract class ServiceBusQueue<TQueue> : NamedSmartEnum<TQueue> where TQueue : ServiceBusQueue<TQueue>
 {
     protected ServiceBusQueue(string name, int value) : base(name, value)
     {
