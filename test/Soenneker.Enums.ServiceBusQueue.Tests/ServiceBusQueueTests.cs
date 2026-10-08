@@ -1,6 +1,7 @@
 using Soenneker.Tests.HostedUnit;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Soenneker.Enums.ServiceBusQueue.Tests;
 
@@ -12,7 +13,7 @@ public class ServiceBusQueueTests : HostedUnitTest
     }
 
     [Test]
-    public async ValueTask Derived_values_participate_in_lookup()
+    public async ValueTask Derived_values_participate_in_lookup(CancellationToken cancellationToken)
     {
         TestQueue emails = TestQueue.Emails;
 
