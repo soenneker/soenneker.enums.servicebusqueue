@@ -41,6 +41,6 @@
         <None Include="..\..\README.md" Pack="true" PackagePath="\" />
         <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
         <None Include="..\..\icon.png" Pack="true" PackagePath="\" />
-        <PackageReference Include="Soenneker.SmartEnum.Named" Version="11.0.51" />
+        <PackageReference Include="Soenneker.SmartEnum.Named" Version="11.0.52" />
     </ItemGroup>
 </Project>
